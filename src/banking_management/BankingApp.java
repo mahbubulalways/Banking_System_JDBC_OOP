@@ -62,8 +62,15 @@ public class BankingApp {
                                         accountManager.debit_balance(email);
                                         break;
                                     }
+                                    case 2: {
+                                        accountManager.credit_balance(email);
+                                        break;
+                                    }
                                     case 4: {
                                         accountManager.check_balance(email);
+                                    }
+                                    case 5: {
+                                        accountManager.get_account_number(email);
                                     }
                                 }
                             }
